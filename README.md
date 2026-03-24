@@ -104,3 +104,10 @@ streampay-backend/
 ## License
 
 MIT
+
+## Smoke Testing
+To run the E2E smoke tests against a local Docker stack:
+1. `docker-compose up -d`
+2. `./scripts/smoke.sh http://localhost:3000`
+
+**Prerequisites:** `curl` must be installed.
