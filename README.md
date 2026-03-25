@@ -101,8 +101,11 @@ Keep the default branch green before merging.
 ```
 streampay-backend/
 ├── src/
-│   ├── index.ts        # Express app and routes
-│   └── health.test.ts  # API tests
+│   ├── api/            # Versioned API routes
+│   ├── db/             # Drizzle ORM schema and client
+│   ├── metrics/        # Prometheus metrics logic and tests
+│   ├── repositories/   # Data access layer
+│   └── routes/         # Webhooks and other handlers
 ├── package.json
 ├── tsconfig.json
 ├── jest.config.js
